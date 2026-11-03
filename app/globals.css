@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --bg: #f8fafc;
@@ -24,24 +24,30 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  padding: 1.25rem;
-}
-.btn {
-  background: var(--brand);
-  color: #fff;
-  border-radius: 0.75rem;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-}
-.btn:disabled { opacity: 0.6; }
-.input {
-  width: 100%;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  padding: 0.6rem 0.8rem;
+@layer components {
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--brand);
+    color: #fff;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+  }
+  .btn:disabled { opacity: 0.6; }
+  .input {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 0.6rem 0.8rem;
+  }
 }

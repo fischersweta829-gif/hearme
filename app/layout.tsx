@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import { themeInitScript } from "./lib/theme";
 
 export const metadata: Metadata = {
-  title: "MindSpace: Youth Wellness",
+  title: "Hear Me Youth Wellness",
   description: "An anonymous, privacy-conscious wellness space for Kenyan youth.",
 };
 
@@ -15,7 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
-      <body>
+      {/* suppressHydrationWarning on body: browser extensions inject attributes here */}
+      <body suppressHydrationWarning>
         <CrisisBanner />
         <Navbar />
         <main className="mx-auto max-w-6xl px-4 py-6">{children}</main>
