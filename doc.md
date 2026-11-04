@@ -1,6 +1,6 @@
 # Kenyan Youth Distress-Pattern Platform: Architecture & Requirements
 
-Capstone: *A Behavioral Clustering and BERT-Based NLP Model for Identifying Emotional Distress Patterns in Anonymous Online Interactions Among Kenyan Youth*
+* A Behavioral Clustering and BERT-Based NLP Model for Identifying Emotional Distress Patterns in Anonymous Online Interactions Among Kenyan Youth*
 
 ---
 
@@ -266,26 +266,14 @@ distress-platform/
 - [ ] Data deletion/export in `/settings`
 - [ ] Predefined (non-generative) support responses, reviewed by a mental-health professional
 
-### Infra
+### Infrastructure
 - [ ] GitHub repo, `.env.example`, seeds/random-seed logging for reproducibility
-- [ ] Dockerfile for `ml-service`
+- [ ] Dockerfile for `ml-service` ---redis localhost
 - [ ] GPU for fine-tuning (Colab / Kaggle is fine for a capstone)
 - [ ] CI: lint + type-check + a few ML unit tests
 
 ---
 
-## 8. Build order (suggested)
-
-1. **Week 1–2:** Repo, auth + roles, DB schema, landing page, layout/navbar/theme
-2. **Week 3–4:** Data pipeline notebooks, preprocessing, lexicon v1, baselines
-3. **Week 5–6:** Fine-tune BERT variants → `/sentiment` endpoint → journal/check-in showing sentiment
-4. **Week 7:** K-Means + behaviour features → `/cluster/*` → dashboard cluster pages
-5. **Week 8:** Fusion + ablation → `/dashboard/models`, confusion matrix, significance tests
-6. **Week 9:** Alerts, crisis flow, audit log, annotation UI
-7. **Week 10:** Offline/PWA, i18n, error analysis, polish
-8. **Week 11–12:** Evaluation write-up, export figures, demo data, documentation
-
----
 
 ## 9. Mapping to your objectives
 

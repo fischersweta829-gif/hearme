@@ -51,7 +51,7 @@ export default function RegisterPage() {
       <form onSubmit={onSubmit} className="card space-y-4">
         <h1 className="text-2xl font-bold">Create your account</h1>
         <p className="text-sm" style={{ color: "var(--muted)" }}>
-          Choose a pseudonym. Please don&apos;t use your real name or any detail that identifies you.
+          Choose a pseudonym.(Anonymous)
         </p>
 
         <label className="block text-sm">
