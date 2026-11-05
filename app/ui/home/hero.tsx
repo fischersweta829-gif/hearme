@@ -8,7 +8,7 @@ export default function Hero() {
         A safe space to <span style={{ color: "var(--brand)" }}>check in</span> with yourself
       </h1>
       <p className="mx-auto mt-4 max-w-xl" style={{ color: "var(--muted)" }}>
-        Hear Me is an anonymous wellness space for young Kenyans, with gentle support, helpful
+        MindSpace is an anonymous wellness space for young Kenyans, with gentle support, helpful
         resources, and help close by when you need it.
       </p>
       <div className="mt-8 flex justify-center gap-3">
