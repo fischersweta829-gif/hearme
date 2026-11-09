@@ -8,7 +8,7 @@ export default function ResearchNotice() {
       <p>
         MindSpace is part of a university research project. It is <strong>not</strong> a medical
         service and does not diagnose anyone. If you are in danger or thinking about harming yourself,
-        please visit our <Link href="/crisis" className="underline">crisis page</Link> now.
+        please visit our <Link href="/crisis" className="underline">crisis page</Link> now ...
       </p>
     </section>
   );

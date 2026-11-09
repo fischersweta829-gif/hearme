@@ -7,7 +7,7 @@ export interface Session {
   exp: number;
 }
 
-// Route prefix -> roles allowed. First match wins (order matters).
+// Route prefix First match wins (order matters).
 export const ROUTE_ROLES: [string, Role[]][] = [
   ["/admin", ["admin"]],
   ["/dashboard/alerts", ["counsellor", "admin"]],
